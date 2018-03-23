@@ -1,5 +1,5 @@
-##js模块打包几种方式/n
-#CommonJS\n
-#AMD
-#UMD
-#IIFE
+## js模块打包几种方式
+# CommonJS
+# AMD
+# UMD
+# IIFE
