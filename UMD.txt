@@ -26,3 +26,27 @@ UMD的实现很简单：
     // can return a function as the exported value.
     return {};
 }));
+
+
+//自己测试的例子
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.test1 = factory());
+}(this, (function () { 'use strict';
+
+// src/foo.js
+var foo = 'hello world!';
+
+// src/main.js
+function test1 () {
+  console.log(foo);
+}
+
+
+// p1();
+// export default p;
+
+return test1;
+
+})));
